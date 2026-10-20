@@ -280,9 +280,9 @@ document.getElementById("articleForm").addEventListener("submit", async event =>
 
 if (
   SUPABASE_URL.startsWith("https://") &&
-  !SUPABASE_URL.includes("PASTE_") &&
+  !SUPABASE_URL.includes("https://hmnvqiqdntlhsxunzfjb.supabase.co") &&
   SUPABASE_KEY &&
-  !SUPABASE_KEY.includes("PASTE_")
+  !SUPABASE_KEY.includes("sb_publishable_NdcJYqV8jM0fe9LbjMP75w_JnxcZLAs")
 ) {
   db = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
   db.auth.onAuthStateChange(() => {
