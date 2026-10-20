@@ -95,8 +95,8 @@ footer{text-align:center;padding:30px;color:var(--muted);border-top:1px solid #e
 <footer>© <span id="year"></span> DailyRead. Read something meaningful every day.</footer>
 
 <script>
-const SUPABASE_URL = "PASTE_YOUR_PROJECT_URL_HERE";
-const SUPABASE_KEY = "PASTE_YOUR_PUBLISHABLE_KEY_HERE";
+const SUPABASE_URL = "https://hmnvqiqdntlhsxunzfjb.supabase.co";
+const SUPABASE_KEY = "sb_publishable_NdcJYqV8jM0fe9LbjMP75w_JnxcZLAs";
 
 let db = null;
 let allArticles = [];
@@ -116,7 +116,7 @@ function escapeHTML(value) {
 
 function showLogin() {
   if (!db) return alert("Pehle Supabase URL aur Publishable key add karo.");
-  const email = prompt("Admin email address:");
+  const email = prompt("umairprince389@gmail.com:");
   if (!email) return;
   const password = prompt("Admin password:");
   if (!password) return;
